@@ -1,0 +1,91 @@
+/*--Home---*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+#banner{
+    background: linear-gradient(rgba(0,0,0,0.5),#6e88db) ,url(images/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.logo{
+    width: 140px;
+    position: absolute;
+    top: 4%;
+    left: 10%;
+}    
+.banner-text{
+    text-align: center;
+    color: white;
+    padding-top: 180px;
+}
+.banner-text h1{
+    font-size: 100px;
+    font-family:'Times New Roman', Times, serif;
+}
+.banner-text p{
+    font-size: 30px;
+    font-style: italic;
+}
+
+.banner-btn{
+    margin: 70px auto 0;
+}
+.banner-btn a{
+    width: 150px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 12px 0;
+    color: white;
+    border: 0.5px solid white ;
+}
+#sideNav{
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    right: -250px;
+    top: 0;
+    z-index: 2;
+    background:#6e88db;
+    transition: 0.5s;
+}
+nav ul li{
+    list-style: none;
+    margin: 50px 20px;
+
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+#menubtn{
+    width: 50px;
+    height: 50px;
+    background:white;
+    text-align: center;
+    position: fixed;
+    right: 30px;
+    top: 20px;
+    border-radius: 3px;
+    z-index: 3;
+    cursor: pointer;
+}
+#menubtn img{
+    width: 20px;
+    margin-top: 15px;
+}
+@media screen and (max-width : 770px){
+    .banner-text h1{
+        font-size: 44px;
+    }
+    .banner-btn a{
+        display: block;
+        margin: 20px auto;
+    }
+}
+
